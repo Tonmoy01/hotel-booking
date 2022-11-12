@@ -1,0 +1,104 @@
+.data-table {
+  height: 600px;
+  padding: 20px;
+
+  .data-table-title {
+    width: 100%;
+    font-size: 24px;
+    clear: #808080;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      text-decoration: none;
+      color: #008000;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid #008000;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      &:hover {
+        background: #00800088;
+        color: #fff;
+      }
+    }
+  }
+
+  .cell-with-img {
+    display: flex;
+    align-items: center;
+
+    .cell-img {
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+
+  .cell-with-status {
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    &.active {
+      color: #008000;
+      background: rgba(0, 128, 0, 0.151);
+    }
+
+    &.pending {
+      color: #daa520;
+      background: rgba(189, 189, 3, 0.103);
+    }
+
+    &.passive {
+      color: #dc143c;
+      background: rgba(255, 0, 0, 0.05);
+    }
+  }
+
+  .cell-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .view-button {
+      padding: 2px 5px;
+      color: #00008b;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    .delete-button {
+      padding: 2px 5px;
+      color: #dc143c;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+  }
+}

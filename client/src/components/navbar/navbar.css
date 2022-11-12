@@ -1,0 +1,32 @@
+.navbar {
+  height: 70px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1024px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .logo {
+  margin-top: 1px;
+} */
+
+.nav-button {
+  margin-left: 20px;
+  bottom: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
