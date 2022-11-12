@@ -53,7 +53,7 @@ const DataTable = ({ columns }) => {
   return (
     <div className='data-table'>
       <div className='data-table-title'>
-        Add New User
+        {path.toUpperCase()}
         <Link to={`/${path}/new`} className='link'>
           Add New
         </Link>

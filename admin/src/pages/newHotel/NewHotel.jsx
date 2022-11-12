@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 import DriveFolderUploadOutlinedIcon from '@mui/icons-material/DriveFolderUploadOutlined';
@@ -10,6 +11,8 @@ import useFetch from '../../hooks/useFetch';
 import axios from 'axios';
 
 const NewHotel = () => {
+  const navigate = useNavigate();
+
   const [files, setFiles] = useState('');
   const [info, setInfo] = useState({});
   const [rooms, setRooms] = useState([]);
@@ -59,6 +62,8 @@ const NewHotel = () => {
     } catch (error) {
       console.log(error);
     }
+
+    navigate('/hotels');
   };
 
   return (
